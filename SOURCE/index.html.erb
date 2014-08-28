@@ -92,6 +92,7 @@
 
         <tr>
           <td align="left" class="footer">
+
             <br>
             Copyright 2014 Acme Corp.
             <br><br>
@@ -99,31 +100,55 @@
             Images are from unsplash.com. No longer interested in this email? Too bad, <a href="#">you never subscribed</a> nor received this demo email anyway.
             <br><br>
 
+            <!--[if mso]>
             <table width="100%" cellpadding="0" cellspacing="0" border="0">
               <tr>
-                <% @data[:footer].each do |column| %>
-                  <td width="20%" align="left"  valign="top">
-                    <p><%= column[:title] %></p>
-                    <ul>
-                    <% column[:items].each do |link| %>
-                      <li>
-                        <a href="#"><%= link[:name] %></a>
-                      </li>
-                    <% end %>
-                    </ul>
-                  </td>
-                <% end %>
-                <td align="left" width="40%">
-                  Acme Corp.<br>
-                  123 Main St. <br>
-                  Springfield, MA 02115
-                  <br><br>
+            <![endif]-->
 
-                  Legal Registration Number: ABC-12345<br>
-                  Managing Director: Wylie Cyote<br>
+                <% @data[:footer].each do |column| %>
+                <!--[if mso]>
+                  <td width="20%" align="left"  valign="top" class="footer-col">
+                <![endif]-->
+
+                    <table cellpadding="0" cellspacing="0" border="0" align="left" width="20%" class="footer-table">
+                      <tr>
+                        <td>
+                          <p><%= column[:title] %></p>
+                          <% column[:items].each do |link| %>
+                            <a href="#"><%= link[:name] %></a><br>
+                          <% end %>
+                        </td>
+                      </tr>
+                    </table>
+
+                <!--[if mso]>
+                  </td>
+                <![endif]-->
+                <% end %>
+                <!--[if mso]>
+                  <td align="left" width="40%" class="footer-col">
+                <![endif]-->
+
+                  <table cellpadding="0" cellspacing="0" border="0" align="left" width="40%" class="footer-table">
+                    <tr>
+                      <td>
+                        Acme Corp.<br>
+                        123 Main St. <br>
+                        Springfield, MA 02115
+                        <br><br>
+
+                        Legal Registration Number: ABC-12345<br>
+                        Managing Director: Wylie Cyote<br>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!--[if mso]>
                 </td>
               </tr>
             </table>
+            <![endif]-->
+
 
           </td>
         </tr>
