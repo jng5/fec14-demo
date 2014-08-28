@@ -1,0 +1,69 @@
+/* main.scss */
+.page-wrapper {
+  background-color: #fff; }
+
+.pad-sides {
+  padding-left: 14px;
+  padding-right: 14px; }
+
+.article-image {
+  padding-top: 14px;
+  padding-left: 14px; }
+
+.article-body {
+  padding-top: 14px;
+  padding-right: 14px;
+  padding-left: 14px; }
+
+.title {
+  font-family: Helvetica, sans-serif;
+  color: #D23C00; }
+
+.body-text {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Helvetica, sans-serif; }
+
+.articles td {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Helvetica, sans-serif; }
+.articles h3 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 28px;
+  color: #0C4B88; }
+.articles a {
+  color: #0C4B88; }
+
+.footer-table td {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: Helvetica, sans-serif;
+  color: #888;
+  padding-bottom: 14px; }
+
+.footer {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: Helvetica, sans-serif;
+  color: #888; }
+  .footer p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+    color: #888; }
+  .footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+  .footer li {
+    margin: 0;
+    padding: 0; }
+  .footer a, .footer td {
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+    color: #999; }
+  .footer li a {
+    text-decoration: none; }
