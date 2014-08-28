@@ -1,0 +1,26 @@
+
+@media screen and (max-width: 600px) {
+
+  table[class="container"] {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  td[class="footer"] {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  /* does not work for Android 4.3+ */
+  td[class="footer-col"] {
+    display: block !important;
+    width: 100% !important;
+    padding-bottom: 14px;
+  }
+
+  /* works for Android 4.3+ and Outlook */
+  table[class="footer-table"] {
+    width: 100% !important;
+  }
+}
+
