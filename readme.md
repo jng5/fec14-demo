@@ -42,6 +42,28 @@ Please note these folders also include code changes/demoes that were not shown d
   
 As you can imagine, I use a markup templating language like `ERB` or `twig` so I can make my markup changes in **one place instead of three** if I have 3 footer columns.
 
+## !! Error from Live Coding session
+
+I didn't notice and because we didn't do and wait for a Litmus test, we did not see that we need to change widths from percentages to fixed when switching from cell to table after adding if mso.
+
+Before
+
+    <td width="20%> content </td>
+    
+After
+
+    <!--[if mso]>
+      <td align="left" width="20%" class="footer-col">
+    <![endif]-->
+    
+    <table width="120" class="footer-table">
+    ...
+    </table>
+
+In the demo, I had `20%` in both places. But we need fixed widths of course.
+
+The code has been corrected now in this [commit](https://github.com/jng5/fec14-demo/commit/179936f5312bcd1dab1716e870e7905177f10712)
+
 ## License (MIT)
 
 Copyright (c) 2014 Julie Ng
